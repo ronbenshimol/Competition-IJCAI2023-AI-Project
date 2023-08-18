@@ -6,6 +6,7 @@
 
 This is the folders structures of our project, we included the competiton's code base as our code uses parts of this code, this code should be skipped of course.
 
+
 ### the main folders are:
 
 agents - a folder containing submitted agents
@@ -13,6 +14,8 @@ rl_trainer - a folder containing everything needed for the agent trainer we wrot
 rl_trainer.agent_trainer.agent_models - a folder containing classes for each rl model supported in the agent trainer
 rl_trainer.algo - a folder containing RL algorithm implementations
 rl_trainer.rl-algo-competition - Directory we created in the cloud environment for training agents and the game classifier
+
+To take a look at the agent trainer you can browse the ‘agent_trainer’ package. To get an understanding of how the simulation environment works and interacts with us you can take a look at ‘create_game_classifier_dataset.py’ and of course for a better understanding of our reinforcement learning algorithms and the neural networks we designed, Take a look at the directories and files with a name containing agent.
 
 ```
 
@@ -28,6 +31,7 @@ rl_trainer.rl-algo-competition - Directory we created in the cloud environment f
   ┃  ┃  ┣  dueling_dqn_agent_submit.py        // Python file with function that return player action
   ┃  ┃  ┗  submission.py        // Sample submission file
   ┃  ┣  game_classifier        // Second submitted agent, utilising game classification
+  ┃  ┃  ┣  game_classifier.ipynb        // the python notebook we wrote in order to train the game classifier
   ┃  ┃  ┣  football_actor.pth        // PPO model to play the football game
   ┃  ┃  ┣  model-game-classifier-loss023-acc-0905.pth // Game classifier model
   ┃  ┃  ┣  running_actor.pth        // PPO model to play running
